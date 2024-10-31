@@ -1,0 +1,7 @@
+local player = game.Players.LocalPlayer
+local Backpack = player.Backpack
+local ToyGun = game.Players.LocalPlayer.Backpack.ToyGun
+
+ToyGun.GripPos = Vector3.new(.3,1.5,1.5)
+
+print("made by Plague (or plague.1 on discord)")
