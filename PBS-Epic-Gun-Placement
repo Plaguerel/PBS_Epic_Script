@@ -27,4 +27,4 @@ end
 
 player.Chatted:Connect(onChat)
 
-print("prefixes : .real to make it look like a penis and .head to make it sim towards your head")
+print("prefixes : .real to make it look like a penis ///\\\ and .head to make it aim towards your head ///\\\ .normal to bring the gun back in its original state")
