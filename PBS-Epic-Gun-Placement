@@ -2,7 +2,29 @@ local player = game.Players.LocalPlayer
 local Backpack = player.Backpack
 local ToyGun = game.Players.LocalPlayer.Backpack.ToyGun
 
-ToyGun.GripPos = Vector3.new(.3,1.8,1.5)
-ToyGun.ToolTip = "Show em'."
+-- Function to handle the chat command
+local function onChat(message)
+    if ToyGun then
+        if message == ".head" then
+            ToyGun.GripPos = Vector3.new(-.1, -1, 1.4)
+            ToyGun.GripRight = Vector3.new(-1,0,0)
+            ToyGun.GripUp = Vector3.new(0,1,0)
 
-print("made by Plague (or plague.1 on discord)")
+        elseif message == ".real" then
+            ToyGun.GripPos = Vector3.new(0.3, 1.5, 1.5)
+            ToyGun.GripRight = Vector3.new(0,0,1)
+            ToyGun.GripUp = Vector3.new(0,1,0)
+
+         elseif message == ".normal" then
+         ToyGun.GripPos = Vector3.new(-.7,-.2,0)
+         ToyGun.GripRight = Vector3.new(0,0,1)
+         ToyGun.GripUp = Vector3.new(0,1,0)
+        end
+    else
+        warn("ToyGun not found in the backpack!")
+    end
+end
+
+player.Chatted:Connect(onChat)
+
+print("prefixes : .real to make it look like a penis and .head to make it sim towards your head")
