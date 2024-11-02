@@ -2,7 +2,6 @@ local player = game.Players.LocalPlayer
 local Backpack = player.Backpack
 local ToyGun = game.Players.LocalPlayer.Backpack.ToyGun
 
--- Function to handle the chat command
 local function onChat(message)
     if ToyGun then
         if message == "/e head" then
