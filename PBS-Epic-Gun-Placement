@@ -20,10 +20,17 @@ local function onChat(message)
          ToyGun.GripUp = Vector3.new(0,1,0)
         end
     else
-        warn("ToyGun not found in the backpack!")
+        warn("you don't seem to have the gun inside your invintory, buy one maybe?")
     end
 end
 
 player.Chatted:Connect(onChat)
 
+
+print("({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})")
+print("Made by Plague (or plague.1 on discord)")
+print("({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})")
+print(" ")
+print(" ")
 print("prefixes : /e real to make it look like a penis ///\\\ and /e head to make it aim towards your head ///\\\ /e normal to bring the gun back in its original state")
+
