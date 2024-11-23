@@ -24,9 +24,41 @@ end
 
 player.Chatted:Connect(onChat)
 
+local player = game.Players.LocalPlayer
+local UIS = game:GetService("UserInputService")
+
+local originalGravity = game.Workspace.Gravity
+
+function float()
+    player.Character.Humanoid.Sit = true
+    game.Workspace.Gravity = 0
+end
+
+function unfloat()
+    player.Character.Humanoid.Sit = false
+    game.Workspace.Gravity = originalGravity
+end
+
+player.Chatted:Connect(function(message)
+    if message:lower() == "/e f" then
+        float()
+    end
+end)
+UIS.JumpRequest:Connect(function()
+    unfloat()
+end)
+
 print("({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})")
 print("Made by Plague (or plague.1 on discord)")
 print("({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})")
 print(" ")
 print(" ")
 print("prefixes : /e real to make it look like a penis ///\\\ and /e head to make it aim towards your head ///\\\ /e normal to bring the gun back in its original state")
+print(" ")
+print(" ")
+print("update 1.5! added a new feature called the "chill float"!")
+print(" ")
+print(" ")
+print("type /e f to float, the script makes your body so thst whenever a body that can push you PUSHES you it'll make you float far away!!1")
+
+-- mad geeked rn
