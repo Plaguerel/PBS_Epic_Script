@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 local Backpack = player.Backpack
-local ToyGun = game.Players.LocalPlayer.Backpack.ToyGun
+local ToyGun = game.Players.LocalPlayer.Backpack.ToyGun or game:FindFirstChildWhichIsA(ToyGun)
 
 local function onChat(message)
     if ToyGun then
