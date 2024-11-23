@@ -4,17 +4,15 @@ local ToyGun = game.Players.LocalPlayer.Backpack.ToyGun or game:FindFirstChildWh
 
 local function onChat(message)
     if ToyGun then
-        if message == "/e head" then
+        if message == "/f head" then
             ToyGun.GripPos = Vector3.new(-.1, -1, 1.4)
             ToyGun.GripRight = Vector3.new(-1,0,0)
             ToyGun.GripUp = Vector3.new(0,1,0)
-
-        elseif message == "/e real" then
+        elseif message == "/f real" then
             ToyGun.GripPos = Vector3.new(0.3, 1.5, 1.5)
             ToyGun.GripRight = Vector3.new(0,0,1)
             ToyGun.GripUp = Vector3.new(0,1,0)
-
-         elseif message == "/e normal" then
+        elseif message == "/f normal" then
          ToyGun.GripPos = Vector3.new(-.7,-.2,0)
          ToyGun.GripRight = Vector3.new(0,0,1)
          ToyGun.GripUp = Vector3.new(0,1,0)
@@ -31,4 +29,4 @@ print("Made by Plague (or plague.1 on discord)")
 print("({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})")
 print(" ")
 print(" ")
-print("prefixes : /e real to make it look like a penis ///\\\ and /e head to make it aim towards your head ///\\\ /e normal to bring the gun back in its original state")
+print("prefixes : /f real to make it look like a penis ///\\\ and /f head to make it aim towards your head ///\\\ /f normal to bring the gun back in its original state")
