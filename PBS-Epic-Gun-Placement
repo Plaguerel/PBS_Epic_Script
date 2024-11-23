@@ -26,6 +26,7 @@ end
 
 player.Chatted:Connect(onChat)
 
+local function SearchForAGun()
 if ToyGun then
 print("({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})")
 print("Made by Plague (or plague.1 on discord)")
@@ -33,4 +34,5 @@ print("({[]})({[]})({[]})({[]})({[]})({[]})({[]})({[]})")
 print(" ")
 print(" ")
 print("prefixes : /e real to make it look like a penis ///\\\ and /e head to make it aim towards your head ///\\\ /e normal to bring the gun back in its original state")
+end
 end
