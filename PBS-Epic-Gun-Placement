@@ -1,5 +1,5 @@
-local player = game.Players.LocalPlayer
-local Backpack = player.Backpack
+local plr = game.Players.LocalPlayer
+local Backpack = plr.Backpack
 local ToyGun = game.Players.LocalPlayer.Backpack.ToyGun or game:FindFirstChildWhichIsA(ToyGun)
 
 local function onChat(message)
@@ -22,7 +22,7 @@ local function onChat(message)
     end
 end
 
-player.Chatted:Connect(onChat)
+plr.Chatted:Connect(onChat)
 
 local player = game.Players.LocalPlayer
 local UIS = game:GetService("UserInputService")
