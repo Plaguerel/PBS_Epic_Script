@@ -23,3 +23,5 @@ local function onChat(message)
 end
 
 plr.Chatted:Connect(onChat)
+
+print("/e real to make it look like a penis ///\\\ /e head to make it like you're holding it against your head ///\\\ /e normal to make it go back to its original state ///\\\ made by Plague (or plague.1 on discord)")
