@@ -49,6 +49,7 @@ end
 plr.Chatted:Connect(onChat)
 
 print(string.rep("()", 40))
+print("made by Plague (or plague.1 on discord)")
 print("say /e real in chat to make the gun look like a penis")
 print("say /e head in chat to make the gun point towards your head")
 print("say /e mouth in chat to make the gun go inside your mouth")
